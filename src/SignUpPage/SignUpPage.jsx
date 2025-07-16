@@ -10,9 +10,9 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col lg:flex-row overflow-hidden">
-      {/* Left: Image */}
-      <div className="w-full lg:w-1/2 h-64 lg:h-full">
+    <div className="min-h-screen flex flex-col lg:flex-row">
+      {/* Left: Image Section */}
+      <div className="w-full lg:w-1/2 h-64 lg:h-screen">
         <img
           src="./images/loginpg.png"
           alt="Login Illustration"

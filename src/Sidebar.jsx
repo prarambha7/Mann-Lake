@@ -19,21 +19,21 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
     <>
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+          className="fixed inset-0  bg-opacity-50 z-40 md:hidden"
           onClick={closeSidebar}
         ></div>
       )}
 
       <div
         className={`fixed md:relative md:translate-x-0 transition-transform duration-300 ease-in-out z-50 md:z-0
-          w-64 flex-shrink-0 top-0 left-0 h-screen
+          w-64 flex-shrink-0 top-0 left-0 min-h-screen
           ${isOpen ? 'translate-x-0' : '-translate-x-full'}
         `}
       >
-        <div className="bg-white rounded-lg shadow-sm border border-gray-200 h-[80vh] flex flex-col justify-between">
+        <div className="rounded-lg shadow-sm border border-gray-200 h-[80vh] flex flex-col justify-between bg-white sticky top-23">
           
           {/* Top: Menu & Navigation */}
-          <div className="flex flex-col flex-grow overflow-hidden">
+          <div className="flex flex-col flex-grow overflow-hidden ">
             {/* Mobile Close Button */}
             <div className="md:hidden flex items-center justify-between p-4 border-b">
               <span className="font-semibold text-gray-900">Menu</span>

@@ -109,7 +109,7 @@ const Layout = ({ children }) => {
               )}
             </div>
 
-            <div className="flex items-center space-x-2 sm:space-x-4 relative">
+            <div className="flex items-center space-x-2 sm:space-x-4 relative ">
               {/* Hot Topics toggle on mobile */}
               <button 
                 onClick={() => setIsHotTopicsOpen(!isHotTopicsOpen)}
